@@ -25,7 +25,7 @@
   
 }
 body{
-  background-image: url("/res/bg.jpg");
+  background-image: url("../res/bg.jpg");
   background-size: cover;
 }
 .header{ 
@@ -253,9 +253,11 @@ body{
 }
 
 .ourWork__title{
+  text-align: center;
   width: 100%;
   font-size: 32px;
   background: linear-gradient(135deg, #d3d3d3 0%, #414141 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 20px 0;
@@ -266,24 +268,40 @@ body{
   padding: 10px 15px;
 }
 
-.ourWork__slaider {
-  position: relative;
-  overflow: hidden;
-  max-width: 1200px;
-  max-height: 1600px;
-  margin: 20px auto;
-}
-
 .ourWork__wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  display: flex;
+  justify-content: space-around;
   transition: transform 0.5s ease;
+  width: 100%;
 }
 
-.ourWork__slide {
-  width: 300px; /* фиксированная ширина */
-  flex-shrink: 0;
+.ourWork__slade {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 10px;
+  min-height: 150px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(109, 109, 109, 0.773); 
+  position: relative; 
+  overflow: hidden; 
+  display: inline-block;
+}
+
+.slade__window{
+  
+  position: absolute;
+  bottom: -100%; 
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); 
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: bottom 0.55s ease;
+}
+.ourWork__slade:hover .slade__window {
+  bottom: 0; 
 }
 
 .controls{
