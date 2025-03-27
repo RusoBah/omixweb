@@ -28,6 +28,8 @@ body{
   background-image: url("../res/bg.jpg");
   background-size: cover;
 }
+/***********************/
+
 .header{ 
   display: flex;
   justify-content: space-around;
@@ -101,7 +103,7 @@ body{
   color:rgba(0, 0, 0, 0.95)
 }
 
-
+/***********************/
 .about{
   display: flex;
   flex-wrap: wrap;
@@ -147,6 +149,8 @@ body{
   padding: 0 15px;
 }
 
+
+/***********************/
 .company{
   gap: 32px;
   margin: 100px;
@@ -183,6 +187,7 @@ body{
   padding: 35px 15px;  
 }
 
+
 .company__bloks{
   display: flex;
   justify-content: space-evenly;
@@ -201,7 +206,7 @@ body{
   padding: 10px 0;
 }
 
-
+/***********************/
 .work{
   display: flex;
   flex-wrap: wrap;
@@ -217,9 +222,9 @@ body{
 }
 
 .work__text{
-  background-color: var(--bg-color);
   width: 30%;
   margin: 15px;
+  background-color: var(--bg-color);
   padding: 15px;
   border: 2px solid rgba(44, 44, 44, 0.295);
   backdrop-filter: blur(10px);
@@ -246,6 +251,7 @@ body{
   padding: 0 15px;
 }
 
+/***********************/
 .ourWork{
   margin: 35px 0;
   height: 100vh;
@@ -309,9 +315,137 @@ body{
   text-align: center;
 }
 
+/***********************/
+.price{
+
+}
+
+.price__title{
+  text-align: center;
+}
+.price__title h2{
+  font-size: 32px;
+  padding: 10px 15px;
+}
+.price__title p{
+  font-size: 26px;
+  padding: 10px 15px;
+}
+.price__title a{
+  font-size: 26px;
+  color: #742727;
+}
+.price__title a:hover{
+
+  color: #7a5858;
+}
+
+.price__buttons{
+  border: 1px solid #7e2323;
+  border-radius: 20px;
+  margin: 0 auto;
+  width: 18%;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: -5px -4px 7px rgba(146, 4, 4, 0.747),
+  4px 4px 8px rgba(126, 35, 35, 0.5);
+  min-height: 60px;
+  justify-content: space-around;
+}
+.price__btn{
+  padding: 15px 20px;
+  transition: all ease 0.4s;
+}
+.price__btn:focus{
+  background-color: #7e2323;
+  margin: 5px;
+  border-radius: 20px;
+  padding: 2px 8px;
+  color: #000000;;
+}
 
 
+.price__table{
+  margin: 80px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
+.table__element{
+  width: 30%;
+  margin: 15px 5px;
+  background-color: var(--bg-color);
+  padding: 15px;
+  border: 2px solid rgba(124, 4, 4, 0.596);
+  box-shadow: -4px -4px 8px rgba(146, 4, 4, 0.747),
+  4px 4px 8px rgba(126, 35, 35, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  transition: all 0.25s;
+  
+}
+
+.table__element:first-child{
+  background-color: #bd04767c;
+}
+.table__element:first-child .table__title{
+  margin: 2.3px 0;
+}
+.table__header{
+  border-bottom: 2px solid #b8b5b5;
+  min-height: 300px;
+}
+
+.table__title{
+  text-align: center;      
+  margin: 0 auto;
+}
+.table__title h2{
+  font-weight: 800;
+  font-size: 18px;
+}
+.table__order{
+  margin: 5px auto;
+  text-align: center;
+  
+}
+.table__order h3{
+  font-size: 18px;
+}
+.table__order a{
+  color: #742727;
+}
+.table__order a:hover{
+
+  color: #7a5858;
+}
+.table__order .order__button{
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.table__order p{
+  font-size: 18px;
+}
+
+.table__serves{
+  
+}
+.table__serves h3{
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.table__serves p{
+  padding: 8px 15px;
+}
+
+/***********************/
 .contact__form {
   max-width: 600px;
   margin: 0 auto;
@@ -324,12 +458,13 @@ body{
 }
 
 .form__header h2 {
-  color: #333;
   margin-bottom: 10px;
+  font-size: 32px;
+
 }
 
 .form__header p {
-  color: #666;
+  font-size: 26px;
 }
 
 .form__group {
@@ -397,7 +532,7 @@ input:focus {
 
 
 
-
+/***********************/
 .footer{
   margin-top: 80px;
   text-align: center;
