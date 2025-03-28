@@ -10,31 +10,31 @@
 <body>
 
   <header class="header">
-    <a href="" class="header__logo">OMIXWEB 24</a>
+    <a href="#title" class="header__logo">OMIXWEB 24</a>
     <nav class="header__menu">
-      <a class="menu__item" id="" href="">О нас</a>
-      <a class="menu__item" id="" href="">Почему выбирают omixweb</a>
-      <a class="menu__item" id="" href="">Как мы работаем</a>
-      <a class="menu__item" id="" href="">Наши работы</a>
-      <a class="menu__item" id="" href="">Стоимость</a>
-      <a class="menu__item" id="" href="">Связаться</a>
+      <a class="menu__item" id="" href="#about">О нас</a>
+      <a class="menu__item" id="" href="#company">Почему выбирают omixweb</a>
+      <a class="menu__item" id="" href="#work">Как мы работаем</a>
+      <a class="menu__item" id="" href="#ourWork">Наши работы</a>
+      <a class="menu__item" id="" href="#price">Стоимость</a>
+      <a class="menu__item" id="" href="#contacts">Связаться</a>
       <a class="menu__item" id="" href="">Контакты</a>
     </nav>
   </header>
 
   <div class="main">
 
-    <div class="main__title">
-      <h1>Ваш проводник в Битрикс24: <br> надежный и проверенный</h1>
+    <div class="main__title" >
+      <h1 id="title">Ваш проводник в Битрикс24: <br> надежный и проверенный</h1>
       <p>Мы создаем современные технологии, а не просто делаем — <br> инструменты для Вашего бизнеса</p>     
       
-      <button class="order__button" href="#" type="button">Заказать сейчас</button>
+      <button class="order__button" type="button">Заказать сейчас</button>
     
     </div>
 
-    <div class="about">
+    <div class="about" >
       <div class="about__title">
-        <h1>О нас</h1>
+        <h1 id="about">О нас</h1>
       </div>
       <div class="about__text">
         <h2>Комплексная автоматизация бизнеса</h2>
@@ -52,10 +52,10 @@
       </div>
     </div>
 
-    <div class="company">
+    <div class="company" >
       <div class="company__content">
         
-        <h2>Почему выбирают ONIXWEB</h2>
+        <h2 id="company">Почему выбирают ONIXWEB</h2>
         <p>
           Мы компания с опытом разработки и внедрения инструментов для автоматизации бизнес-процессов. Входим в ТОП интеграторов Битрикс24 по России. Среди наших клиентов крупнейшие предприятия, торговые сети и ритейлеры. <br>
           
@@ -79,9 +79,9 @@
       </div>
     </div>
 
-    <div class="work">
+    <div class="work" >
       <div class="work__title">
-        <h1>Как мы работаем</h1>
+        <h1 id="work">Как мы работаем</h1>
         <p>Нас ценят за проактивность, прозрачность работы, сильный менеджмент и отлаженные процессы</p>
       </div>
       <div class="work__text">
@@ -106,9 +106,9 @@
       </div>
     </div>
 
-    <div class="ourWork">
+    <div class="ourWork" >
       <div class="ourWork__title">
-        <h1>Наши работы</h1>
+        <h1 id="ourWork">Наши работы</h1>
       </div>
       <div class="ourWork__slaider">
         <div class="ourWork__wrapper">
@@ -140,16 +140,16 @@
       </div>
     </div>
 
-    <div class="price">
+    <div class="price" >
       <div class="price__title">
-        <h2>Цены указаны за всю компанию,<br>
+        <h2 id="price">Цены указаны за всю компанию,<br>
           а не за отдельных пользователей
           </h2>
-          <p>Цена по <a href="http://">акции</a></p>
+          <p>Цена по <a href="https://ai-sale.bitrix24.ru/ai-sale/">акции</a></p>
       </div>
       <div class="price__buttons">
-        <button class="price__btn" type="button">на месяц</button>
-        <button class="price__btn" type="button">на год</button>
+        <button class="price__btn" id="btn__month" type="button">на месяц</button>
+        <button class="price__btn" id="btn__year" type="button">на год</button>
       </div>
 
       <div class="price__table">
@@ -198,7 +198,7 @@
             </div>
             <div class="table__order">
               <h3>5 <br> пользователей</h3>
-              <p>2 490 ₽/мес.</p><a href="http://">за всех пользователей</a>
+              <p class="old__price">2 490 ₽/мес.</p><p class="new__price">1 743 ₽/мес. <span class="discount"> - 30%</span></p><a href="http://">за всех пользователей</a>
               <button class="order__button" type="button">КУПИТЬ</button>
               <p>24 ГБ</p>
             </div>
@@ -223,6 +223,10 @@
             <h3>Сайты <img src="./res/download (3).svg" alt="какая-то фигня"></h3>
             <h3>Интернет-магазины <img src="./res/download (3).svg" alt="какая-то фигня"></h3>
           </div>
+          <div class="table__serves-bottom">
+            <h3>Поддержка <img src="./res/download (6).svg" alt="какая-то фигня"></h3>
+            
+          </div>
         </div>
 
         <!-- 3й блок -->
@@ -234,7 +238,7 @@
             </div>
             <div class="table__order">
               <h3>50 <br> пользователей</h3>
-              <p>6 990 ₽/мес.</p><a href="http://">за всех пользователей</a>
+              <p class="old__price">6 990 ₽/мес.</p><p class="new__price">4 893 ₽/мес. <span class="discount"> - 30%</span></p><a href="http://">за всех пользователей</a>
               <button class="order__button" type="button">КУПИТЬ</button>
               <p>100 ГБ</p>
             </div>
@@ -261,6 +265,10 @@
             <h3>Маркетинг <img src="./res/download (3).svg" alt="какая-то фигня"></h3>
             <h3>Документы Онлайн <img src="./res/download (3).svg" alt="какая-то фигня"></h3>
           </div>
+          <div class="table__serves-bottom">
+            <h3>Поддержка <img src="./res/download (3).svg" alt="какая-то фигня"></h3>
+            <h3>Администрирование <img src="./res/download (3).svg" alt="какая-то фигня"></h3>
+          </div>
         </div>
 
         <!-- 4й блок -->
@@ -272,7 +280,7 @@
             </div>
             <div class="table__order">
               <h3><img src="./res/download.svg" alt="огонёк">100 <br> пользователей</h3>
-              <p>13 990 ₽/мес.</p><a href="http://">за всех пользователей</a>
+              <p class="old__price">13 990 ₽/мес.</p><p class="new__price">9 793 ₽/мес. <span class="discount"> - 30%</span></p><a href="http://">за всех пользователей</a>
               <button class="order__button" type="button">КУПИТЬ</button>
               <p>1024 ГБ</p>
             </div>
@@ -304,6 +312,10 @@
             <h3>Автоматизация <img src="./res/download (4).svg" alt="какая-то фигня"></h3>
             <h3>HR: Компания <img src="./res/download (4).svg" alt="какая-то фигня"></h3>
           </div>
+          <div class="table__serves-bottom">
+            <h3>Поддержка <img src="./res/download (3).svg" alt="какая-то фигня"></h3>
+            <h3>Администрирование <img src="./res/download (3).svg" alt="какая-то фигня"></h3>
+          </div>
         </div>
 
         <!-- 5й блок -->
@@ -315,7 +327,7 @@
             </div>
             <div class="table__order">
               <h3>250 <br> пользователей</h3>
-              <p>33 990 ₽/мес.</p><a href="http://">за всех пользователей</a>
+              <p class="old__price">33 990 ₽/мес.</p><p class="new__price">23 793 ₽/мес. <span class="discount"> - 30%</span></p><a href="http://">за всех пользователей</a>
               <button class="order__button" type="button">КУПИТЬ</button>
               <p>3 ТБ</p>
             </div>
@@ -350,14 +362,27 @@
             <h3>Энтерпрайз-кластер <img src="./res/download (4).svg" alt="какая-то фигня"></h3>
             <h3>Энтерпрайз-кластер <img src="./res/download (4).svg" alt="какая-то фигня"></h3>
           </div>
+          <div class="table__serves-bottom">
+            <h3>Поддержка <img src="./res/download (4).svg" alt="какая-то фигня"></h3>
+            <h3>Администрирование <img src="./res/download (4).svg" alt="какая-то фигня"></h3>
+          </div>
         </div>
     
-        
+      </div>
+
+      <div class="price__stocks">
+        <div class="stocks__title">
+          <a href="#">Условаия акции</a>
+        </div>
+        <button class="order__button" type="button"><a href="https://www.bitrix24.ru/prices/">Сравнить тарифы</a></button>
+      </div>
+      
     </div>
+    
     <div class="contacts">
       <form class="contact__form">
         <div class="form__header">
-          <h2>Контактные данные</h2>
+          <h2 id="contacts">Контактные данные</h2>
           <p>Оставьте контактные данные и мы обязательно свяжемся с вами.</p>
         </div>
       
@@ -391,7 +416,7 @@
         <button type="submit" class="submit-btn">Отправить</button>
       </form>
     </div>
-
+  
   </div>
 
   <footer class="footer">

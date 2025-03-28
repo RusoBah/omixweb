@@ -1,6 +1,6 @@
 /* Обнуление стилей*/
 @import url("base_style.css");
-@import url("about.css");
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root{
@@ -14,7 +14,23 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
 }
+html{
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
 
+html::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #696969;
+ 
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #070303;
+}
 *{
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -390,21 +406,28 @@ body{
   background-color: #bd04767c;
 }
 .table__element:first-child .table__title{
-  margin: 2.3px 0;
+  margin: 5px auto;
+  min-height: 80px;
+}
+.table__element:first-child .table__order{
+  margin-top: 35px;
 }
 .table__header{
   border-bottom: 2px solid #b8b5b5;
-  min-height: 300px;
+  min-height: 350px;
 }
 
 .table__title{
   text-align: center;      
-  margin: 0 auto;
+  margin: 5px auto;
+  min-height: 80px;
 }
 .table__title h2{
   font-weight: 800;
   font-size: 18px;
 }
+
+
 .table__order{
   margin: 5px auto;
   text-align: center;
@@ -423,15 +446,17 @@ body{
 .table__order .order__button{
   font-size: 16px;
   width: 100%;
-  margin-bottom: 20px;
+  margin: 20px auto;
 }
 .table__order p{
   font-size: 18px;
+  margin: 5px auto;
 }
 
 .table__serves{
-  
+  margin-bottom: 40%;
 }
+
 .table__serves h3{
   font-weight: 600;
   font-size: 18px;
@@ -445,7 +470,60 @@ body{
   padding: 8px 15px;
 }
 
+.table__serves-bottom{
+
+  position: fixed;
+  bottom: 40px;
+}
+.table__serves-bottom h3{
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price__stocks{
+  text-align: center;
+}
+.price__stocks a{
+  font-size: 26px;
+  color: #742727;
+}
+.price__stocks a:hover{
+
+  color: #7a5858;
+}
+
+.price__stocks .order__button{
+  box-shadow: 5px 5px 5px rgba(109, 109, 109, 0.89);
+}
+
+.price__stocks .order__button a{
+  color: #ffffff;
+}
+
+.discount{
+  background-color: #bd04767c;
+  padding: 3px;
+  border-radius: 5px;
+  box-shadow: 0px -2px 5px rgba(146, 4, 4, 0.747),
+   -1px 3px 5px rgba(126, 35, 35, 0.5);
+}
+
+.new__price{
+  font-weight: bold;
+  display: none;
+}
+
+
+
 /***********************/
+.contacts{
+  margin: 100px auto;
+
+}
 .contact__form {
   max-width: 600px;
   margin: 0 auto;
